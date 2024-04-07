@@ -1,6 +1,11 @@
 # Gmail filter squasher
 
-Personal project to merge multiple filters with the same action but different "from:" addresses on their criteria.
+![GCP](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?logo=google-cloud&logoColor=white)
+![Project Language](https://img.shields.io/github/languages/top/Ajordat/gmail_filter_squasher)
+![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)
+![Project License](https://img.shields.io/github/license/Ajordat/gmail_filter_squasher)
+
+Personal project to merge multiple filters with the same action but different "from:" addresses on their criteria. 
 
 So basically it's a tool that takes these filters:
 
@@ -9,6 +14,8 @@ So basically it's a tool that takes these filters:
 And merges them into a single one:
 
 ![Single filter](docs/single_filter.png)
+
+Note that only merges filters were the criteria is a "from" statement and they have a matching action. Nevertheless, I can accept PRs considering other merging criterias.
 
 ## Prerequisites
 
@@ -21,7 +28,8 @@ To run this application, you need the following prerequisites:
 
 ## Setup
 
-The following instructions are based mostly on [the official quickstart][1]: 
+The following instructions are based mostly on [the official quickstart][1]:
+
 1. Create a GCP Project.
 2. Enable the [Gmail API][2].
 3. Configure the OAuth consent screen.

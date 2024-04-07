@@ -265,5 +265,6 @@ def main():
     if DEBUG:
         logger.info("RUNNING IN DEBUG MODE. NO CHANGES WERE APPLIED.")
 
+
 if __name__ == "__main__":
     main()
