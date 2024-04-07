@@ -20,12 +20,12 @@ from googleapiclient.errors import HttpError
 # Do note that no changes will be performed into Gmail until debug mode is manually
 # deactivated (DEBUG=False).
 
-# Debug mode
+# Debug mode. If True, no changes will be applied into Gmail
 DEBUG = True
+# Verbosity mode. If True, extra logs will be output
+VERBOSE_MODE = False
 # File with the credentials to use
 CREDENTIALS_FILE = "credentials.json"
-# Verbosity mode. If True, extra logs will be output
-VERBOSE_MODE = True
 
 # File that will be used to store the access and refresh tokens once retrieved
 TOKENS_FILE = "tokens.json"
@@ -262,6 +262,8 @@ def main():
     else:
         logger.info("No filters were squashed.")
 
+    if DEBUG:
+        logger.info("RUNNING IN DEBUG MODE. NO CHANGES WERE APPLIED.")
 
 if __name__ == "__main__":
     main()
